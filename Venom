@@ -1,0 +1,25 @@
+public class Venom {
+    
+    Integer health;
+    String name;
+    Integer powerLevel;
+   
+    public Venom(Integer health,String name,Integer powerLevel){
+        this.health = health;
+        this.name = name;
+        this.powerLevel = powerLevel;
+    }
+    
+    public Integer getHealth(){
+        return health;
+    }
+    
+    public void setHealth(Integer newHealth){
+        //System.debug(this.health);
+        this.health = newHealth; 
+        //System.debug(this.health);
+    }
+    
+    
+    
+}

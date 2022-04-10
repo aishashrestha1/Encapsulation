@@ -1,0 +1,36 @@
+public class Hero {
+    
+    private Integer health;
+    String name;
+    Integer powerLevel;
+   
+    public Hero(Integer health,String name,Integer powerLevel){
+        this.health = health;
+        this.name = name;
+        this.powerLevel = powerLevel;
+    }
+    
+    public Integer getHealth(){
+        return health;
+    }
+    
+    public void setHealth(Integer newHealth){
+        //System.debug(this.health);
+        this.health = newHealth; 
+        //System.debug(this.health);
+    }
+    
+    public void attack(Venom venom){
+        
+        Integer newHealth = venom.getHealth() - this.powerLevel; //40
+        if(newHealth >0){
+            venom.setHealth(newHealth); 		
+    	} else {
+            venom.setHealth(0); 
+            System.debug('Venom Died');
+            
+        }
+    }
+    
+    
+}

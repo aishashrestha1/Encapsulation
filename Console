@@ -1,0 +1,6 @@
+Hero h = new Hero(100,'Iron',60);
+Venom v = new Venom(100,'Venom',40);
+h.attack(v); //40
+System.debug('Venom Current Health: '+v.getHealth());
+h.attack(v); //Venom Die
+System.debug('Venom Current Health: '+v.getHealth());
